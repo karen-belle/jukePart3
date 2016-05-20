@@ -10,8 +10,8 @@ juke.run(function($rootScope) {
 
 juke.config(function($urlRouterProvider, $locationProvider) {
     // when there is an empty route, redirect to /index   
-    $urlRouterProvider.when('/', '/albums')
-        .when('/artist/:artist', '/artist/:artist/albums');
+    $urlRouterProvider.when('/', '/albums');
+     $urlRouterProvider.when('/artists/:artist', '/artists/:artist/albums');
 
     $locationProvider.html5Mode(true);
 })
