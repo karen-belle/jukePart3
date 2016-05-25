@@ -4,7 +4,7 @@ juke.config(function($stateProvider) {
         templateUrl: 'js/album/albums.template.html',
         resolve: {
             albums: function(AlbumFactory) {
-                console.log("resolving albums");
+                // console.log("resolving albums");
                 return AlbumFactory.fetchAll()
             }
         },
